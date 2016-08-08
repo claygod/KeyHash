@@ -41,6 +41,7 @@ func BenchmarkKeyHashShortStringKey(b *testing.B) {
 	b.StopTimer()
 	m := make(map[string]int)
 	var a int
+	var z int
 	for i := ADD_PATH_COUNT; i > 0; i-- {
 		x := strconv.Itoa(i)
 		m[x] = i
@@ -54,6 +55,7 @@ func BenchmarkKeyHashShortStringKey(b *testing.B) {
 		a += m["100000"]
 		a += m["500000"]
 		a += m["999999"]
+		z += a
 	}
 }
 
@@ -62,6 +64,7 @@ func BenchmarkKeyHashLongStringKey(b *testing.B) {
 	b.StopTimer()
 	m := make(map[string]int)
 	var a int
+	var z int
 	for i := ADD_PATH_COUNT; i > 0; i-- {
 		x := strconv.Itoa(i) + " this very long strring key"
 		m[x] = i
@@ -75,6 +78,7 @@ func BenchmarkKeyHashLongStringKey(b *testing.B) {
 		a += m["100000 this very long strring key"]
 		a += m["500000 this very long strring key"]
 		a += m["999999 this very long strring key"]
+		z += a
 	}
 }
 
@@ -83,6 +87,7 @@ func BenchmarkKeyHashUint64Key(b *testing.B) {
 	b.StopTimer()
 	m := make(map[uint64]int)
 	var a int
+	var z int
 	for i := ADD_PATH_COUNT; i > 0; i-- {
 		x := uint64(i)
 		m[x] = i
@@ -96,5 +101,6 @@ func BenchmarkKeyHashUint64Key(b *testing.B) {
 		a += m[100000]
 		a += m[500000]
 		a += m[999999]
+		z += a
 	}
 }
