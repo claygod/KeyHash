@@ -48,6 +48,7 @@ func BenchmarkKeyHashShortStringKey(b *testing.B) {
 	}
 	b.StartTimer()
 	for i := ADD_PATH_COUNT; i > 0; i-- {
+		z = 0
 		a = m["1"]
 		a += m["1000"]
 		a += m["5000"]
@@ -71,6 +72,7 @@ func BenchmarkKeyHashLongStringKey(b *testing.B) {
 	}
 	b.StartTimer()
 	for i := ADD_PATH_COUNT; i > 0; i-- {
+		z = 0
 		a = m["1 this very long strring key"]
 		a += m["1000 this very long strring key"]
 		a += m["5000 this very long strring key"]
@@ -94,6 +96,7 @@ func BenchmarkKeyHashUint64Key(b *testing.B) {
 	}
 	b.StartTimer()
 	for i := ADD_PATH_COUNT; i > 0; i-- {
+		z = 0
 		a = m[1]
 		a += m[1000]
 		a += m[5000]
