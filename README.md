@@ -2,8 +2,8 @@ KeyHash Library generates a hash of the string as a Uint64.
 It may be necessary to use hash tables Golang key is not a string,
 but as the numbers to speed up a little bit to work with these tables.
 
-[![API documentation](https://godoc.org/github.com/claygod/KeyHash?status.svg)](https://godoc.org/github.com/claygod/KeyHash)
 [![Go Report Card](https://goreportcard.com/badge/github.com/claygod/KeyHash)](https://goreportcard.com/report/github.com/claygod/KeyHash)
+[![API documentation](https://godoc.org/github.com/claygod/KeyHash?status.svg)](https://godoc.org/github.com/claygod/KeyHash)
 
 # Usage
 
