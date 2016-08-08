@@ -1,4 +1,3 @@
-# KeyHash
 KeyHash Library generates a hash of the string as a Uint64.
 It may be necessary to use hash tables Golang key is not a string,
 but as the numbers to speed up a little bit to work with these tables.
@@ -9,7 +8,7 @@ but as the numbers to speed up a little bit to work with these tables.
 # Usage
 
 An example of using the KeyHash Library:
-```go
+```golang
 package main
 
 import (
@@ -32,14 +31,14 @@ func main() {
 
 The first three rows in the table show the speed of the three methods: Min, Mid and Max. The last three lines are shown to clearly see that the speed of the key type uint64 significantly higher than with the key string.
 
-```
+``
 BenchmarkKeyHashMin-4           	1000000000	         0.06 ns/op
 BenchmarkKeyHashMid-4           	1000000000	         0.06 ns/op
 BenchmarkKeyHashMax-4           	2000000000	         0.08 ns/op
 BenchmarkKeyHashShortStringKey-4	2000000000	         0.12 ns/op
 BenchmarkKeyHashLongStringKey-4 	1000000000	         0.29 ns/op
 BenchmarkKeyHashUint64Key-4     	2000000000	         0.09 ns/op
-```
+``
 
 # API
 
@@ -57,4 +56,3 @@ An important feature of all the programs that generate the hash, it is the prese
 # Notice
 
 Attention! Use this library is not difficult. But if your application speed does not play a major and decisive role, use in daily practice string keys, keep it simple the program, remember to KISS.
-
