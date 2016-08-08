@@ -3,7 +3,7 @@
 package KeyHash
 
 // KeyHash
-// Work
+// API
 
 import (
 	"crypto/md5"
@@ -16,6 +16,7 @@ func New() *KeyHash {
 
 const multiplier uint64 = 1024
 
+// KeyHash structure
 type KeyHash struct{}
 
 // Min - receiving a hash of a string up to 8 characters in length.
