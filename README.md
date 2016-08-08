@@ -8,7 +8,7 @@ but as the numbers to speed up a little bit to work with these tables.
 # Usage
 
 An example of using the KeyHash Library:
-```golang
+```go
 package main
 
 import (
