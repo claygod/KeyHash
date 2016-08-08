@@ -30,15 +30,15 @@ func main() {
 # Perfomance
 
 
-The first three rows in the table show the speed of the three methods: Min, Mid and Max. The last two lines are shown to clearly see that the speed of the key type uint64 significantly higher than with the key string.
+The first three rows in the table show the speed of the three methods: Min, Mid and Max. The last three lines are shown to clearly see that the speed of the key type uint64 significantly higher than with the key string.
 
 ```
-BenchmarkKeyHashMin-4           	2000000000	         0.06 ns/op
-BenchmarkKeyHashMid-4           	2000000000	         0.06 ns/op
-BenchmarkKeyHashMax-4           	2000000000	         0.17 ns/op
-BenchmarkKeyHashShortStringKey-4	2000000000	         0.10 ns/op
-BenchmarkKeyHashLongStringKey-4 	1000000000	         0.27 ns/op
-BenchmarkKeyHashUint64Key-4     	2000000000	         0.07 ns/op
+BenchmarkKeyHashMin-4           	1000000000	         0.06 ns/op
+BenchmarkKeyHashMid-4           	1000000000	         0.06 ns/op
+BenchmarkKeyHashMax-4           	2000000000	         0.08 ns/op
+BenchmarkKeyHashShortStringKey-4	2000000000	         0.12 ns/op
+BenchmarkKeyHashLongStringKey-4 	1000000000	         0.29 ns/op
+BenchmarkKeyHashUint64Key-4     	2000000000	         0.09 ns/op
 ```
 
 # API
