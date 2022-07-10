@@ -58,3 +58,7 @@ An important feature of all the programs that generate the hash, it is the prese
 # Notice
 
 Attention! Use this library is not difficult. But if your application speed does not play a major and decisive role, use in daily practice string keys, keep it simple the program, remember to KISS.
+
+### Copyright
+
+Copyright © 2022 Eduard Sesigin. All rights reserved. Contacts: claygod@yandex.ru
