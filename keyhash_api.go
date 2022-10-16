@@ -2,7 +2,7 @@ package KeyHash
 
 // KeyHash
 // Work
-// Copyright © 2016 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
+// Copyright © 2016-2022 Eduard Sesigin. All rights reserved. Contacts: <claygod@yandex.ru>
 
 import (
 	"crypto/md5"
